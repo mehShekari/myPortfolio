@@ -5,10 +5,11 @@ import img_1 from "../../assets/img/img-1.jpeg"
 export const HomeContainer = styled.div`
   width: 100%;
   overflow: hidden;
+  height: 150vh;
 
   .home_bg_holder {
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     background-image: url("${img_1}");
     background-repeat: no-repeat;
     background-size: auto;

@@ -27,12 +27,16 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --dark-primary: #023047;
     --primary: #219EBC;
-    --light-primary: #BECAE6;
+    --light-primary: #BECFF9;
     --danger: #FFB703;
     --wihte: #FFFFFF;
-
+    --dark: #333;
     --navBar-height: 8em;
+    --sides-padding: 5em;
+    --alpha-background: rgba(0, 0, 0 , .5)
   }
+
+
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -40,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
 
 
     background-color: ${({ theme }) => theme.screen.screenBackgroundColor};
@@ -77,7 +82,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button { 
-    background-color: transparent;
     border: none;
     outline: none;
   }

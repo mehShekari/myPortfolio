@@ -12,6 +12,7 @@ code {
     monospace;
 
     animation: name duration timing-function delay iteration-count direction fill-mode;
+    flex: 1 1 auto;
 }
 
 /* hello ! */

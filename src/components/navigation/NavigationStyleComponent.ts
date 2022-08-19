@@ -21,6 +21,7 @@ export const NavigationContainer = styled.nav`
   aligh-items: center;
   width: 100%;
   height: 100%;
+  padding: 0px var(--sides-padding);
   
   .ham_menu {
     width: 100px;
@@ -29,13 +30,12 @@ export const NavigationContainer = styled.nav`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 50px;
     cursor: pointer;
     z-index: 999;
     border-radius: 50%;
     margin-top: 20px;
     position: relative;
-
+    background-color: transparent;
 
     &::after {
       content: "";
@@ -44,7 +44,6 @@ export const NavigationContainer = styled.nav`
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      z-index: 800;
       background-color: rgba(999, 999 , 999 , .2);
       transform: scale(.9);
       animation: ${hamMenuAnimation} 1500ms linear infinite alternate;
@@ -111,8 +110,6 @@ export const NavigationContainer = styled.nav`
 
   .brand{
     text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
     display: inline;
     display: flex;
     align-text: center;

@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
   z-index: 100;
   color: white;
   height: var(--navBar-height);
-
+  // background-color:  var(--alpha-background);
 `
 
 const HeaderComponent = () => {
