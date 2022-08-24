@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
-import myPicture from "../../assets/img/myPic3.jpg"
+import myPicture from "../../../assets/img/myPic3.jpg"
 import styled, { keyframes } from "styled-components";
-import html from "../../assets/img/html.png"
-import css from "../../assets/img/css.png"
-import javscript from "../../assets/img/javascript.png"
-import react from "../../assets/img/react.png"
+import html from "../../../assets/img/html.png"
+import css from "../../../assets/img/css.png"
+import javscript from "../../../assets/img/javascript.png"
+import react from "../../../assets/img/react.png"
 
 const showSkillsAnimation1 = keyframes`
   from {
@@ -114,23 +114,21 @@ const AboutMe = () => {
 
   const handleMouseEnter = () => {
     const styles = aboutMeImgRef.current?.style;
-    if(styles) {
-      
+    if (styles) {
+
     }
   }
 
   const handleMouseLeave = () => {
     const styles = aboutMeImgRef.current?.style;
-    if(styles) {
+    if (styles) {
     }
   }
 
-  const handleAnimationEnd = () => {
-    console.log(aboutMeImgRef);
-  }
+  const handleAnimationEnd = () => { }
 
   return <AboutMeContainer>
-    <div className="about_me--img" 
+    <div className="about_me--img"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -141,7 +139,7 @@ const AboutMe = () => {
       <img src={html} alt="" />
       <img src={css} alt="" />
       <img src={javscript} alt="" />
-      <img src={react} alt="" onAnimationEnd={handleAnimationEnd}/>
+      <img src={react} alt="" onAnimationEnd={handleAnimationEnd} />
     </div>
   </AboutMeContainer>
 }

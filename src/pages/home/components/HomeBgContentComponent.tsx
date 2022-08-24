@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react'
-import { PaddingTopFix } from '../../assets/PaddingTopFix';
+import { PaddingTopFix } from '../../../assets/PaddingTopFix';
 import styled from "styled-components";
-import TextTyper from "../../lib/textTyper/TextTyper";
+import TextTyper from "../../../lib/textTyper/TextTyper";
 import AboutMeText from './AboutMeText';
 import AboutMe from './AboutMe';
-import ScrollDown from './ScrollDown';
+import ScrollDown from './../ScrollDown';
 
 const HomeBgContent = styled.div`
   padding: 0 var(--sides-padding);

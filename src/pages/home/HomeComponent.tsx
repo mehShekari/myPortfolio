@@ -1,8 +1,11 @@
-import React from 'react'
-import HomeBgContentComponent from './HomeBgContentComponent';
+import React, { useMemo } from 'react'
+import { useIntercetion } from '../../hooks/useIntersection';
+import HomeBgContentComponent from './components/HomeBgContentComponent';
+import TitleBoxComponent from './components/TitleBoxComponent';
 import { HomeContainer } from './HomeStyledComponent';
 
 const HomeComponent = () => {
+
   return (
     <HomeContainer>
       <div className="home_bg_holder">
@@ -11,6 +14,7 @@ const HomeComponent = () => {
           <HomeBgContentComponent />
         </div>
       </div>
+      <TitleBoxComponent />
     </HomeContainer>
   )
 }

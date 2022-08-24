@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../utilities/elements/Button'
+import { Button } from '../../../utilities/elements/Button'
 import styled from 'styled-components'
 
 const AboutMeTextContainer = styled.div`
